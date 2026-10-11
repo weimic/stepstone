@@ -22,6 +22,7 @@ The build is a plain static site with relative paths, so it works from any host 
 - **Netlify**: connect the repo; `netlify.toml` sets the build command and `dist/` folder.
 - **Cloudflare Pages**: build command `npm run build`, output `dist`. `public/_headers` caches hashed assets for a year.
 - **Vercel**: picks up Vite automatically; `vercel.json` adds the same caching.
+- **GitHub Pages**: `.github/workflows/pages.yml` tests, builds and deploys every push to `main` (Settings → Pages → Source: GitHub Actions). GitHub ignores `_headers`, so assets are cached for 10 minutes instead of a year.
 
 Set `SITE_URL` (for example `https://stepstone.example`) when building so link previews get absolute `og:url` and `og:image` tags. On Netlify the built-in `URL` variable is used if `SITE_URL` isn't set.
 
