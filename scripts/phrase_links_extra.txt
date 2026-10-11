@@ -1,0 +1,4 @@
+# Word pairs that are always within reach of each other, for everyday phrases
+# Numberbatch has no phrase vector for. One pair per line: "pumpkin patch".
+pumpkin patch
+bird seed

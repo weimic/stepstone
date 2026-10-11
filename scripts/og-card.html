@@ -1,0 +1,116 @@
+<!doctype html>
+<!--
+  Source for public/og.png (1200x630) and public/apple-touch-icon.png (180x180).
+  Open http://localhost:5173/scripts/og-card.html with the dev server running and
+  capture #card and #icon at device scale 1.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>StepStone card</title>
+    <script type="module">
+      import '@fontsource-variable/nunito'
+    </script>
+    <style>
+      * { box-sizing: border-box; margin: 0; }
+      body { background: #ddd; font-family: 'Nunito Variable', sans-serif; padding: 20px; display: flex; gap: 20px; align-items: flex-start; }
+      #card { position: relative; width: 1200px; height: 630px; overflow: hidden;
+        background: linear-gradient(180deg, #a3d6e3, #c6e7ef 45%, #e0f2f6); }
+      .bank-top { position: absolute; inset: 0 0 auto 0; height: 118px;
+        background: linear-gradient(180deg, #a8d283, #c9e4ac); border-bottom: 10px solid #86bc62; }
+      .bank-bottom { position: absolute; inset: auto 0 0 0; height: 84px;
+        background: linear-gradient(0deg, #f8eedc, #fff8ec); border-top: 10px solid #e1d8cb; }
+      .ripple { position: absolute; border: 4px solid rgba(255,255,255,.55); border-radius: 50%; }
+      .pad { position: absolute; width: 74px; height: 64px; border-radius: 50%; background: #86bc62;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%, 46% 100%, 0 100%); opacity: .9; }
+      .title { position: absolute; left: 76px; top: 168px; }
+      .title h1 { font-size: 128px; font-weight: 900; letter-spacing: -3px; line-height: 1; color: #36334a; }
+      .title h1 span { color: #457a36; }
+      .title p { margin-top: 18px; font-size: 40px; font-weight: 700; color: #625e78; }
+      .chip { display: inline-block; margin-top: 30px; padding: 12px 26px; border-radius: 999px;
+        background: #fff4cc; color: #8a6510; font-size: 28px; font-weight: 800;
+        box-shadow: 0 6px 0 #ffd96b; }
+      .stone { position: absolute; transform: translate(-50%, -50%); padding: 14px 36px 12px;
+        border-radius: 50%; border-bottom: 10px solid; font-size: 40px; font-weight: 800; white-space: nowrap;
+        box-shadow: 0 10px 22px -10px rgba(54,51,74,.4); }
+      .start { background: #fff8ec; border-color: #cbbfae; color: #36334a; }
+      .sturdy { background: #efe9e0; border-color: #cbbfae; color: #36334a; }
+      .strong { background: #c9e4ac; border-color: #86bc62; color: #355e2a; }
+      .sign { position: absolute; left: 990px; top: 58px; transform: translate(-50%, -50%);
+        padding: 10px 34px; border-radius: 22px; background: #fff8ec; border-bottom: 8px solid #ffd96b;
+        box-shadow: 0 0 0 10px rgba(255,233,163,.7); font-size: 40px; font-weight: 900; letter-spacing: 3px;
+        text-transform: uppercase; color: #36334a; }
+      .frog { position: absolute; width: 104px; transform: translate(-50%, -100%); }
+      svg.path { position: absolute; inset: 0; }
+      #icon { position: relative; width: 180px; height: 180px; background: #c6e7ef; overflow: hidden; }
+      #icon .shore { position: absolute; left: -20px; right: -20px; bottom: -40px; height: 90px; border-radius: 50%; background: #a3d6e3; }
+      #icon svg { position: absolute; left: 22px; top: 34px; width: 136px; }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <div class="bank-top"></div>
+      <div class="bank-bottom"></div>
+      <div class="ripple" style="left: 470px; top: 330px; width: 130px; height: 34px"></div>
+      <div class="ripple" style="left: 1060px; top: 470px; width: 110px; height: 30px"></div>
+      <div class="ripple" style="left: 120px; top: 470px; width: 150px; height: 36px"></div>
+      <div class="pad" style="left: 1080px; top: 330px; transform: rotate(40deg)"></div>
+      <div class="pad" style="left: 560px; top: 455px; transform: rotate(-70deg) scale(.8)"></div>
+      <div class="pad" style="left: 380px; top: 462px; transform: rotate(150deg) scale(.7)"></div>
+
+      <svg class="path" viewBox="0 0 1200 630">
+        <polyline points="660,560 800,420 930,276 990,70" fill="none" stroke="#fff" stroke-opacity=".8"
+          stroke-width="6" stroke-dasharray="4 18" stroke-linecap="round" />
+      </svg>
+
+      <div class="sign">feather</div>
+      <div class="stone start" style="left: 660px; top: 560px">park</div>
+      <div class="stone sturdy" style="left: 800px; top: 420px">pond</div>
+      <div class="stone strong" style="left: 930px; top: 276px">swan</div>
+      <svg class="frog" style="left: 930px; top: 240px" viewBox="0 0 64 56">
+        <ellipse cx="14" cy="47" rx="10" ry="6" fill="#5a9445" />
+        <ellipse cx="50" cy="47" rx="10" ry="6" fill="#5a9445" />
+        <ellipse cx="32" cy="35" rx="24" ry="17" fill="#86bc62" />
+        <ellipse cx="32" cy="41" rx="14" ry="8.5" fill="#e3f1d3" />
+        <circle cx="20" cy="17" r="9" fill="#86bc62" />
+        <circle cx="44" cy="17" r="9" fill="#86bc62" />
+        <circle cx="20" cy="16" r="5.5" fill="#fff" />
+        <circle cx="44" cy="16" r="5.5" fill="#fff" />
+        <circle cx="21" cy="17" r="3" fill="#36334a" />
+        <circle cx="45" cy="17" r="3" fill="#36334a" />
+        <circle cx="22" cy="15.6" r="1" fill="#fff" />
+        <circle cx="46" cy="15.6" r="1" fill="#fff" />
+        <ellipse cx="17" cy="32" rx="4" ry="2.5" fill="#f3a8b9" opacity=".85" />
+        <ellipse cx="47" cy="32" rx="4" ry="2.5" fill="#f3a8b9" opacity=".85" />
+        <path d="M26 31 q6 5 12 0" stroke="#36334a" stroke-width="2.2" fill="none" stroke-linecap="round" />
+      </svg>
+
+      <div class="title">
+        <h1>Step<span>Stone</span></h1>
+        <p>A cozy daily word river</p>
+        <div class="chip">Hop from word to word</div>
+      </div>
+    </div>
+
+    <div id="icon">
+      <div class="shore"></div>
+      <svg viewBox="0 0 64 56">
+        <ellipse cx="14" cy="47" rx="10" ry="6" fill="#5a9445" />
+        <ellipse cx="50" cy="47" rx="10" ry="6" fill="#5a9445" />
+        <ellipse cx="32" cy="35" rx="24" ry="17" fill="#86bc62" />
+        <ellipse cx="32" cy="41" rx="14" ry="8.5" fill="#e3f1d3" />
+        <circle cx="20" cy="17" r="9" fill="#86bc62" />
+        <circle cx="44" cy="17" r="9" fill="#86bc62" />
+        <circle cx="20" cy="16" r="5.5" fill="#fff" />
+        <circle cx="44" cy="16" r="5.5" fill="#fff" />
+        <circle cx="21" cy="17" r="3" fill="#36334a" />
+        <circle cx="45" cy="17" r="3" fill="#36334a" />
+        <circle cx="22" cy="15.6" r="1" fill="#fff" />
+        <circle cx="46" cy="15.6" r="1" fill="#fff" />
+        <ellipse cx="17" cy="32" rx="4" ry="2.5" fill="#f3a8b9" opacity=".85" />
+        <ellipse cx="47" cy="32" rx="4" ry="2.5" fill="#f3a8b9" opacity=".85" />
+        <path d="M26 31 q6 5 12 0" stroke="#36334a" stroke-width="2.2" fill="none" stroke-linecap="round" />
+      </svg>
+    </div>
+  </body>
+</html>

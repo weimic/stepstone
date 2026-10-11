@@ -1,0 +1,182 @@
+[
+  {
+    "start": "park",
+    "target": "feather",
+    "route": ["pond", "swan"],
+    "notes": ["Lots of parks have a pond.", "Swans glide across ponds.", "Swans are soft with feathers."]
+  },
+  {
+    "start": "honey",
+    "target": "piano",
+    "route": ["jam", "jazz"],
+    "notes": ["Both are lovely on toast.", "A jam session is pure jazz.", "Jazz piano, late at night."]
+  },
+  {
+    "start": "cookie",
+    "target": "cabin",
+    "route": ["bake", "stove"],
+    "notes": ["You bake cookies.", "Baking happens on the stove.", "A wood stove keeps a cabin warm."]
+  },
+  {
+    "start": "sandwich",
+    "target": "moon",
+    "route": ["crust", "earth"],
+    "notes": ["Some of us cut off the crusts.", "The Earth has a crust too.", "The moon circles the Earth."]
+  },
+  {
+    "start": "river",
+    "target": "guitar",
+    "route": ["trout", "bass"],
+    "notes": ["Trout swim in rivers.", "A bass is a fish too.", "And a bass guitar."]
+  },
+  {
+    "start": "acorn",
+    "target": "parade",
+    "route": ["pumpkin", "halloween"],
+    "notes": ["Both mean autumn is here.", "Jack-o'-lanterns at Halloween.", "Halloween costume parades."]
+  },
+  {
+    "start": "lemon",
+    "target": "letter",
+    "route": ["mint", "stamp"],
+    "notes": ["Lemon and mint, fresh flavors.", "A stamp in mint condition.", "Stamp it and send the letter."]
+  },
+  {
+    "start": "breeze",
+    "target": "puppy",
+    "route": ["cool", "cute"],
+    "notes": ["A cool breeze.", "Cool and cute.", "Nothing is cuter than a puppy."]
+  },
+  {
+    "start": "canoe",
+    "target": "flower",
+    "route": ["pond", "garden"],
+    "notes": ["Paddle a canoe across a pond.", "A little garden pond.", "Flowers grow in gardens."]
+  },
+  {
+    "start": "kitten",
+    "target": "library",
+    "route": ["mouse", "computer"],
+    "notes": ["Kittens chase mice.", "A computer mouse.", "Libraries have rows of computers."]
+  },
+  {
+    "start": "pancake",
+    "target": "dream",
+    "route": ["breakfast", "waking"],
+    "notes": ["Pancakes for breakfast.", "Breakfast comes after waking up.", "Waking up from a dream."]
+  },
+  {
+    "start": "puddle",
+    "target": "tulip",
+    "route": ["frog", "butterfly"],
+    "notes": ["Frogs love a good puddle.", "Frogs and butterflies share the garden.", "Butterflies visit tulips."]
+  },
+  {
+    "start": "scarf",
+    "target": "milk",
+    "route": ["neck", "calf"],
+    "notes": ["A scarf wraps your neck.", "Neck and calf are both body parts.", "A calf drinks milk."]
+  },
+  {
+    "start": "cabin",
+    "target": "biscuit",
+    "route": ["inn", "breakfast"],
+    "notes": ["A cabin or a cozy inn.", "Bed and breakfast at the inn.", "Warm biscuits for breakfast."]
+  },
+  {
+    "start": "cloud",
+    "target": "festival",
+    "route": ["sunny", "summer"],
+    "notes": ["Sunny with a few clouds.", "Sunny summer days.", "Summer is festival season."]
+  },
+  {
+    "start": "broom",
+    "target": "shell",
+    "route": ["dust", "sand"],
+    "notes": ["A broom sweeps up dust.", "Dust and sand, tiny grains.", "Shells wash up on the sand."]
+  },
+  {
+    "start": "meadow",
+    "target": "glove",
+    "route": ["field", "baseball"],
+    "notes": ["A meadow is a grassy field.", "Baseball is played on a field.", "A well-worn baseball glove."]
+  },
+  {
+    "start": "library",
+    "target": "honey",
+    "route": ["cafe", "tea"],
+    "notes": ["Many libraries have a cafe.", "A pot of tea at the cafe.", "A spoon of honey in your tea."]
+  },
+  {
+    "start": "umbrella",
+    "target": "otter",
+    "route": ["hat", "fur"],
+    "notes": ["An umbrella and a hat for the rain.", "A warm fur hat.", "Otters have the thickest fur of any animal."]
+  },
+  {
+    "start": "lullaby",
+    "target": "envelope",
+    "route": ["poem", "letter"],
+    "notes": ["A lullaby is a sung poem.", "Love poems, love letters.", "Tuck the letter in an envelope."]
+  },
+  {
+    "start": "wagon",
+    "target": "bread",
+    "route": ["hay", "wheat"],
+    "notes": ["A hay wagon ride.", "Hay and wheat, golden fields.", "Bread is made from wheat."]
+  },
+  {
+    "start": "honey",
+    "target": "ocean",
+    "route": ["sweet", "salty"],
+    "notes": ["Honey is sweet.", "Sweet and salty.", "The ocean is salty."]
+  },
+  {
+    "start": "crayon",
+    "target": "cabin",
+    "route": ["paint", "interior"],
+    "notes": ["Crayons and paint.", "Painting the interior.", "A cabin's cozy interior."]
+  },
+  {
+    "start": "beach",
+    "target": "sheep",
+    "route": ["turtle", "rabbit"],
+    "notes": ["Sea turtles nest on beaches.", "The tortoise and the hare.", "Rabbits and sheep both nibble grass."]
+  },
+  {
+    "start": "mountain",
+    "target": "glove",
+    "route": ["ski", "boot"],
+    "notes": ["Ski down the mountain.", "Clip into your ski boots.", "Boots and gloves for the snow."]
+  },
+  {
+    "start": "picnic",
+    "target": "soap",
+    "route": ["basket", "laundry"],
+    "notes": ["Pack the picnic basket.", "A laundry basket too.", "Laundry soap, fresh and clean."]
+  },
+  {
+    "start": "fern",
+    "target": "dinner",
+    "route": ["garden", "picnic"],
+    "notes": ["Ferns grow in shady gardens.", "A picnic in the garden.", "A picnic dinner on a blanket."]
+  },
+  {
+    "start": "forest",
+    "target": "sweater",
+    "route": ["camping", "backpack"],
+    "notes": ["Camping in the forest.", "Pack your backpack.", "Always pack a sweater."]
+  },
+  {
+    "start": "lullaby",
+    "target": "pebble",
+    "route": ["music", "rock"],
+    "notes": ["A lullaby is the softest music.", "Rock music.", "A pebble is a little rock."]
+  },
+  {
+    "start": "letter",
+    "target": "fairy",
+    "route": ["poem", "tale"],
+    "notes": ["A letter can hold a poem.", "Poems and tales, stories in words.", "A fairy tale."]
+  }
+]

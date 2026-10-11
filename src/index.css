@@ -1,0 +1,198 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Nunito Variable', ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+
+  /* Paper and ink: ink on paper is 11:1, ink-soft on paper is 5.6:1. */
+  --color-paper: #fff8ec;
+  --color-paper-deep: #f8eedc;
+  --color-ink: #36334a;
+  --color-ink-soft: #625e78;
+
+  /* River */
+  --color-water-50: #f0f9fb;
+  --color-water-100: #e0f2f6;
+  --color-water-200: #c6e7ef;
+  --color-water-300: #a3d6e3;
+  --color-water-400: #79bfd2;
+  --color-water-600: #3f8aa0;
+
+  /* Moss: the "go" colour. moss-700 carries white text at 5.1:1. */
+  --color-moss-50: #f1f8e9;
+  --color-moss-100: #e3f1d3;
+  --color-moss-200: #c9e4ac;
+  --color-moss-300: #a8d283;
+  --color-moss-400: #86bc62;
+  --color-moss-600: #5a9445;
+  --color-moss-700: #457a36;
+  --color-moss-800: #355e2a;
+
+  /* Stones */
+  --color-pebble-50: #f8f5f0;
+  --color-pebble-100: #efe9e0;
+  --color-pebble-200: #e1d8cb;
+  --color-pebble-300: #cbbfae;
+  --color-pebble-400: #a89a86;
+  --color-pebble-600: #7a6d5b;
+
+  /* Accents */
+  --color-blossom-100: #fde7ec;
+  --color-blossom-200: #f9cbd5;
+  --color-blossom-300: #f3a8b9;
+  --color-blossom-600: #b8516c;
+  --color-butter-100: #fff4cc;
+  --color-butter-200: #ffe9a3;
+  --color-butter-300: #ffd96b;
+  --color-butter-700: #8a6510;
+  --color-lilac-100: #efe9fb;
+  --color-lilac-200: #ddd0f5;
+  --color-lilac-600: #6f58a8;
+  --color-coral-100: #fde6e0;
+  --color-coral-600: #b4553f;
+
+  --radius-blob: 2rem;
+
+  --shadow-soft: 0 6px 20px -8px rgb(54 51 74 / 0.25);
+  --shadow-lift: 0 12px 30px -12px rgb(54 51 74 / 0.35);
+
+  --animate-drift: drift 18s ease-in-out infinite;
+  --animate-shimmer: shimmer 9s linear infinite;
+  --animate-bob: bob 3.2s ease-in-out infinite;
+
+  @keyframes drift {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(14px, -6px) rotate(8deg);
+    }
+  }
+  @keyframes shimmer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 240px 60px;
+    }
+  }
+  @keyframes bob {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    font-optical-sizing: auto;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-water-600);
+    outline-offset: 3px;
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+  }
+}
+
+@layer components {
+  /* Tactile press: a solid "ledge" under the button that squashes on press. */
+  .press {
+    box-shadow: 0 4px 0 0 var(--ledge, rgb(54 51 74 / 0.18));
+    transition:
+      transform 120ms ease,
+      box-shadow 120ms ease,
+      background-color 150ms ease;
+  }
+  .press:not(:disabled):active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 0 var(--ledge, rgb(54 51 74 / 0.18));
+  }
+  .press:disabled {
+    box-shadow: none;
+    transform: translateY(3px);
+  }
+
+  /* Grows a small control's tap area to at least 48px without changing its look. */
+  .hit {
+    position: relative;
+  }
+  .hit::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max(100%, 48px);
+    height: max(100%, 48px);
+    transform: translate(-50%, -50%);
+  }
+
+  /* A slim pebble scrollbar, kept clear of rounded corners. Chromium ignores the
+     ::-webkit-scrollbar rules once scrollbar-color is set, so that is Firefox-only. */
+  .soft-scroll {
+    overscroll-behavior: contain;
+  }
+  .soft-scroll::-webkit-scrollbar {
+    width: 14px;
+  }
+  .soft-scroll::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5rem 1.5rem;
+  }
+  .soft-scroll::-webkit-scrollbar-thumb {
+    min-height: 3rem;
+    border: 4px solid transparent;
+    border-radius: 999px;
+    background-color: var(--color-pebble-300);
+    background-clip: padding-box;
+  }
+  .soft-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-pebble-400);
+  }
+  .soft-scroll::-webkit-scrollbar-button {
+    display: none;
+  }
+  @supports not selector(::-webkit-scrollbar) {
+    .soft-scroll {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-pebble-300) transparent;
+    }
+  }
+
+  .water {
+    background-color: var(--color-water-200);
+    background-image:
+      radial-gradient(ellipse 60px 6px at 30px 20px, rgb(255 255 255 / 0.45), transparent 70%),
+      radial-gradient(ellipse 40px 4px at 150px 80px, rgb(255 255 255 / 0.35), transparent 70%),
+      radial-gradient(ellipse 50px 5px at 200px 150px, rgb(255 255 255 / 0.3), transparent 70%),
+      linear-gradient(180deg, var(--color-water-300), var(--color-water-200) 45%, var(--color-water-100));
+    background-size:
+      240px 180px,
+      240px 180px,
+      240px 180px,
+      100% 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

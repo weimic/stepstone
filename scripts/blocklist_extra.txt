@@ -1,0 +1,25 @@
+# Extra words kept out of the vocabulary, on top of the LDNOOBW list.
+# Players typing these get the normal "not in our word list" message.
+genocide
+hitler
+holocaust
+nazi
+porn
+rape
+raped
+rapist
+suicide
+terrorist
+torture
+
+# Not offensive enough for LDNOOBW, but out of place in a cozy game. These would
+# otherwise come in as everyday extras (see build_vectors.py).
+areola
+buttock
+dicky
+foreskin
+ganja
+prat
+speculum
+tush
+urethra

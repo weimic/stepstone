@@ -1,0 +1,496 @@
+{
+ "k": 300,
+ "ranked": 20000,
+ "pairs": [
+  {
+   "a": "park",
+   "b": "pond",
+   "sim": 24829,
+   "rankAB": 28,
+   "rankBA": 47,
+   "phrase": false,
+   "linkRank": 28,
+   "reach": true
+  },
+  {
+   "a": "pond",
+   "b": "swan",
+   "sim": 19929,
+   "rankAB": 113,
+   "rankBA": 39,
+   "phrase": false,
+   "linkRank": 39,
+   "reach": true
+  },
+  {
+   "a": "swan",
+   "b": "feather",
+   "sim": 19883,
+   "rankAB": 41,
+   "rankBA": 63,
+   "phrase": false,
+   "linkRank": 41,
+   "reach": true
+  },
+  {
+   "a": "honey",
+   "b": "bee",
+   "sim": 31750,
+   "rankAB": 4,
+   "rankBA": 3,
+   "phrase": false,
+   "linkRank": 3,
+   "reach": true
+  },
+  {
+   "a": "honey",
+   "b": "sweater",
+   "sim": -4389,
+   "rankAB": 17068,
+   "rankBA": 17792,
+   "phrase": false,
+   "linkRank": 17068,
+   "reach": false
+  },
+  {
+   "a": "coffee",
+   "b": "cup",
+   "sim": 26366,
+   "rankAB": 25,
+   "rankBA": 15,
+   "phrase": false,
+   "linkRank": 15,
+   "reach": true
+  },
+  {
+   "a": "river",
+   "b": "trout",
+   "sim": 24457,
+   "rankAB": 63,
+   "rankBA": 37,
+   "phrase": false,
+   "linkRank": 37,
+   "reach": true
+  },
+  {
+   "a": "bass",
+   "b": "guitar",
+   "sim": 39229,
+   "rankAB": 2,
+   "rankBA": 11,
+   "phrase": false,
+   "linkRank": 2,
+   "reach": true
+  },
+  {
+   "a": "lemon",
+   "b": "mint",
+   "sim": 24435,
+   "rankAB": 97,
+   "rankBA": 7,
+   "phrase": false,
+   "linkRank": 7,
+   "reach": true
+  },
+  {
+   "a": "stamp",
+   "b": "letter",
+   "sim": 20496,
+   "rankAB": 51,
+   "rankBA": 80,
+   "phrase": false,
+   "linkRank": 51,
+   "reach": true
+  },
+  {
+   "a": "cookie",
+   "b": "bake",
+   "sim": 30257,
+   "rankAB": 40,
+   "rankBA": 36,
+   "phrase": false,
+   "linkRank": 36,
+   "reach": true
+  },
+  {
+   "a": "stove",
+   "b": "cabin",
+   "sim": 19141,
+   "rankAB": 159,
+   "rankBA": 121,
+   "phrase": false,
+   "linkRank": 121,
+   "reach": true
+  },
+  {
+   "a": "park",
+   "b": "tree",
+   "sim": 10676,
+   "rankAB": 613,
+   "rankBA": 529,
+   "phrase": false,
+   "linkRank": 529,
+   "reach": false
+  },
+  {
+   "a": "honey",
+   "b": "sticky",
+   "sim": 12163,
+   "rankAB": 430,
+   "rankBA": 474,
+   "phrase": false,
+   "linkRank": 430,
+   "reach": false
+  },
+  {
+   "a": "cat",
+   "b": "dog",
+   "sim": 40871,
+   "rankAB": 6,
+   "rankBA": 14,
+   "phrase": false,
+   "linkRank": 6,
+   "reach": true
+  },
+  {
+   "a": "banana",
+   "b": "democracy",
+   "sim": 6193,
+   "rankAB": 1735,
+   "rankBA": 1695,
+   "phrase": false,
+   "linkRank": 1695,
+   "reach": false
+  },
+  {
+   "a": "moon",
+   "b": "tide",
+   "sim": 7958,
+   "rankAB": 867,
+   "rankBA": 1121,
+   "phrase": false,
+   "linkRank": 867,
+   "reach": false
+  },
+  {
+   "a": "rain",
+   "b": "umbrella",
+   "sim": 26119,
+   "rankAB": 41,
+   "rankBA": 2,
+   "phrase": false,
+   "linkRank": 2,
+   "reach": true
+  },
+  {
+   "a": "piano",
+   "b": "jazz",
+   "sim": 32368,
+   "rankAB": 47,
+   "rankBA": 20,
+   "phrase": false,
+   "linkRank": 20,
+   "reach": true
+  },
+  {
+   "a": "frog",
+   "b": "lily",
+   "sim": 11645,
+   "rankAB": 348,
+   "rankBA": 574,
+   "phrase": false,
+   "linkRank": 348,
+   "reach": false
+  },
+  {
+   "a": "park",
+   "b": "bench",
+   "sim": 9617,
+   "rankAB": 801,
+   "rankBA": 645,
+   "phrase": true,
+   "linkRank": 150,
+   "reach": true
+  },
+  {
+   "a": "lily",
+   "b": "pad",
+   "sim": 4744,
+   "rankAB": 2543,
+   "rankBA": 2752,
+   "phrase": true,
+   "linkRank": 150,
+   "reach": true
+  },
+  {
+   "a": "snow",
+   "b": "man",
+   "sim": -2073,
+   "rankAB": 13348,
+   "rankBA": 13555,
+   "phrase": true,
+   "linkRank": 150,
+   "reach": true
+  },
+  {
+   "a": "piano",
+   "b": "key",
+   "sim": 9380,
+   "rankAB": 643,
+   "rankBA": 584,
+   "phrase": true,
+   "linkRank": 150,
+   "reach": true
+  },
+  {
+   "a": "camp",
+   "b": "fire",
+   "sim": 7904,
+   "rankAB": 1016,
+   "rankBA": 903,
+   "phrase": true,
+   "linkRank": 150,
+   "reach": true
+  },
+  {
+   "a": "milk",
+   "b": "udder",
+   "sim": 32033,
+   "rankAB": 12,
+   "rankBA": 4,
+   "phrase": false,
+   "linkRank": 4,
+   "reach": true
+  },
+  {
+   "a": "udder",
+   "b": "cow",
+   "sim": 34895,
+   "rankAB": 1,
+   "rankBA": 11,
+   "phrase": false,
+   "linkRank": 1,
+   "reach": true
+  },
+  {
+   "a": "pig",
+   "b": "piglet",
+   "sim": 39868,
+   "rankAB": 3,
+   "rankBA": 2,
+   "phrase": false,
+   "linkRank": 2,
+   "reach": true
+  },
+  {
+   "a": "piglet",
+   "b": "udder",
+   "sim": 22652,
+   "rankAB": 41,
+   "rankBA": 34,
+   "phrase": false,
+   "linkRank": 34,
+   "reach": true
+  },
+  {
+   "a": "mews",
+   "b": "impeccable",
+   "sim": -545,
+   "rankAB": 9735,
+   "rankBA": 9820,
+   "phrase": false,
+   "linkRank": 9735,
+   "reach": false
+  },
+  {
+   "a": "frazer",
+   "b": "gunman",
+   "sim": 7373,
+   "rankAB": 1755,
+   "rankBA": 990,
+   "phrase": false,
+   "linkRank": 990,
+   "reach": false
+  },
+  {
+   "a": "lamp",
+   "b": "promulgated",
+   "sim": 1048,
+   "rankAB": 6573,
+   "rankBA": 6709,
+   "phrase": false,
+   "linkRank": 6573,
+   "reach": false
+  },
+  {
+   "a": "pitched",
+   "b": "lining",
+   "sim": 1228,
+   "rankAB": 6896,
+   "rankBA": 6606,
+   "phrase": false,
+   "linkRank": 6606,
+   "reach": false
+  },
+  {
+   "a": "big",
+   "b": "annihilate",
+   "sim": -2031,
+   "rankAB": 13189,
+   "rankBA": 12886,
+   "phrase": false,
+   "linkRank": 12886,
+   "reach": false
+  },
+  {
+   "a": "forerunner",
+   "b": "shell",
+   "sim": -2016,
+   "rankAB": 12921,
+   "rankBA": 12949,
+   "phrase": false,
+   "linkRank": 12921,
+   "reach": false
+  },
+  {
+   "a": "explanation",
+   "b": "mantra",
+   "sim": 2097,
+   "rankAB": 5383,
+   "rankBA": 5211,
+   "phrase": false,
+   "linkRank": 5211,
+   "reach": false
+  },
+  {
+   "a": "evacuation",
+   "b": "freeman",
+   "sim": 2000,
+   "rankAB": 5595,
+   "rankBA": 4856,
+   "phrase": false,
+   "linkRank": 4856,
+   "reach": false
+  },
+  {
+   "a": "neutralize",
+   "b": "explicit",
+   "sim": -1313,
+   "rankAB": 11273,
+   "rankBA": 10716,
+   "phrase": false,
+   "linkRank": 10716,
+   "reach": false
+  },
+  {
+   "a": "poultry",
+   "b": "corrosion",
+   "sim": -1361,
+   "rankAB": 11631,
+   "rankBA": 11470,
+   "phrase": false,
+   "linkRank": 11470,
+   "reach": false
+  },
+  {
+   "a": "apprehended",
+   "b": "occupancy",
+   "sim": 3392,
+   "rankAB": 3691,
+   "rankBA": 3837,
+   "phrase": false,
+   "linkRank": 3691,
+   "reach": false
+  },
+  {
+   "a": "semolina",
+   "b": "roux",
+   "sim": 23719,
+   "rankAB": 116,
+   "rankBA": 43,
+   "phrase": false,
+   "linkRank": 43,
+   "reach": true
+  },
+  {
+   "a": "arterial",
+   "b": "utopian",
+   "sim": -1367,
+   "rankAB": 11521,
+   "rankBA": 11672,
+   "phrase": false,
+   "linkRank": 11521,
+   "reach": false
+  },
+  {
+   "a": "diocese",
+   "b": "haploid",
+   "sim": 3001,
+   "rankAB": 3840,
+   "rankBA": 4271,
+   "phrase": false,
+   "linkRank": 3840,
+   "reach": false
+  },
+  {
+   "a": "bottomless",
+   "b": "bold",
+   "sim": -1852,
+   "rankAB": 12458,
+   "rankBA": 12479,
+   "phrase": false,
+   "linkRank": 12458,
+   "reach": false
+  },
+  {
+   "a": "founder",
+   "b": "restrain",
+   "sim": -5285,
+   "rankAB": 18169,
+   "rankBA": 17895,
+   "phrase": false,
+   "linkRank": 17895,
+   "reach": false
+  },
+  {
+   "a": "recently",
+   "b": "optimum",
+   "sim": -13502,
+   "rankAB": 19997,
+   "rankBA": 19991,
+   "phrase": false,
+   "linkRank": 19991,
+   "reach": false
+  },
+  {
+   "a": "jamb",
+   "b": "farmhouse",
+   "sim": 5661,
+   "rankAB": 2296,
+   "rankBA": 2005,
+   "phrase": false,
+   "linkRank": 2005,
+   "reach": false
+  },
+  {
+   "a": "sneaker",
+   "b": "marksman",
+   "sim": 1247,
+   "rankAB": 6552,
+   "rankBA": 6404,
+   "phrase": false,
+   "linkRank": 6404,
+   "reach": false
+  },
+  {
+   "a": "ascend",
+   "b": "apache",
+   "sim": -305,
+   "rankAB": 9496,
+   "rankBA": 9429,
+   "phrase": false,
+   "linkRank": 9429,
+   "reach": false
+  }
+ ]
+}

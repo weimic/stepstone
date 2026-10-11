@@ -1,0 +1,9 @@
+# Phrase links to drop even though the phrase filter accepts them. One phrase
+# per line, as words ("volcano rabbit") or as the closed compound ("boxfish").
+# See scripts/out/phrase_links.md for everything the filter kept.
+
+# Obscure names that shortcut whole rivers.
+feather grass
+milk cap
+needle park
+star festival
